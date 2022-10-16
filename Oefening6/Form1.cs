@@ -40,20 +40,30 @@ namespace Oefening6
              * Ik maak van de Tax Rate een constante.*/
             const double taxRate = 0.07;
 
-
+            /*Wanneer het subtotaal groter of gelijk aan 75 is,
+             wordt de tekst binnen het tekstveldje tbShipping gelijk gesteld aan "5".*/
             if (subtotaal >= 75)
             {
                 tbShipping.Text = "5";
             }
+
+            /*Wanneer het subtotaal kleiner is dan 75 en groter is dan 50,
+             wordt de tekst binnen het tekstveldje tbShipping gelijk gesteld aan "10".*/
             else if (subtotaal < 75 && subtotaal > 50)
             {
                 tbShipping.Text = "10";
             }
-            if (subtotaal < 50 && subtotaal > 20)
+
+            /*Wanneer het subtotaal kleiner is dan 50 en groter is dan 20,
+            wordt de tekst binnen het tekstveldje tbShipping gelijk gesteld aan "7.5".*/
+            else if (subtotaal < 50 && subtotaal > 20)
             {
                 tbShipping.Text = "7.5";
             }
-            if (subtotaal < 20)
+
+            /*Wanneer het subtotaal kleiner is dan 52,
+             wordt de tekst binnen het tekstveldje tbShipping gelijk gesteld aan "5".*/
+            else if (subtotaal < 20)
             {
                 tbShipping.Text = "5";
             }
