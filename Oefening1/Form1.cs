@@ -20,7 +20,7 @@ namespace Oefening1
         private void formBegroeting_Load(object sender, EventArgs e)
         {
             //Ik maak de variabelen aan die ik in mijn label wil zetten. Dit zijn strings.
-            string naam = "Bram";
+            string naam = "Waldo";
             string actueleTijd = DateTime.Now.ToShortTimeString(); //Ik maak de korte versie van de huidige tijd. (Het uur.)
             string actueleDatum = DateTime.Now.ToShortDateString(); //Ik maak de korte versie van de huidige datum.
 

@@ -90,6 +90,7 @@
             // 
             this.tbShipping.Location = new System.Drawing.Point(495, 313);
             this.tbShipping.Name = "tbShipping";
+            this.tbShipping.ReadOnly = true;
             this.tbShipping.Size = new System.Drawing.Size(102, 22);
             this.tbShipping.TabIndex = 64;
             // 

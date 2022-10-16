@@ -39,11 +39,29 @@ namespace Oefening6
              * Vervolgens parse ik deze naar een numerieke waarde. (Double)
              * Ik maak van de Tax Rate een constante.*/
             const double taxRate = 0.07;
-            double shipping = Double.Parse(tbShipping.Text);
+
+
+            if (subtotaal >= 75)
+            {
+                tbShipping.Text = "5";
+            }
+            else if (subtotaal < 75 && subtotaal > 50)
+            {
+                tbShipping.Text = "10";
+            }
+            if (subtotaal < 50 && subtotaal > 20)
+            {
+                tbShipping.Text = "7.5";
+            }
+            if (subtotaal < 20)
+            {
+                tbShipping.Text = "5";
+            }
+
 
             //Hier bereken ik de Sales Tax en Grand Total aan de hand 
             double salesTax = taxRate * subtotaal;
-            double grandTotal = subtotaal + salesTax + shipping;
+            double grandTotal = subtotaal + salesTax + int.Parse(tbShipping.Text);
 
 
             //Hier laat ik de resultaten in string-vorm in de correcte veldjes verschijnen.
